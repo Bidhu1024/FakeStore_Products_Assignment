@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Prata&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.product {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.product img {
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  gap: 1rem;
+}
+
+.product .about .title {
+  font-weight: bold;
+}
+
+.product .about .ratings {
+  font-weight: bold;
+}
+
+.product .about .ratings span {
+  font-weight: normal;
+}
+
+.product .about .desc {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+.product .about .category {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.product .about .category span {
+  font-weight: normal;
+}
+
+.product .about .price {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 0.5rem 0;
+  font-family: "Prata", serif;
+  letter-spacing: 1px;
+}
+
+.product .about .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.product .about .controls a {
+  text-decoration: none;
+  color: none;
+}
+
+.product .about .controls .addCart,
+.product .about .controls .buy {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+
+.product .about .controls .buy {
+  background-color: black;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=product.css.map */

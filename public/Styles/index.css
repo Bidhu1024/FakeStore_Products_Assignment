@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Prata&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main header {
+  background: black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+main header .logo {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+main header nav {
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+main header nav .navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+main header nav .navLinks li {
+  list-style: none;
+}
+
+main header nav .navLinks li a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main header nav .navLinks li a:hover {
+  color: orangered;
+}
+
+main .gallery {
+  margin-top: 2rem;
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  padding: 2rem;
+}
+
+main .gallery a {
+  text-decoration: none;
+  color: black;
+}
+
+main .gallery .card {
+  cursor: pointer;
+  padding: 1rem;
+  aspect-ratio: 1;
+  border: none;
+  -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.24);
+          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.24);
+}
+
+main .gallery .card img {
+  height: 200px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main .gallery .card .about {
+  margin-top: 1rem;
+}
+
+main .gallery .card .about .title {
+  font-size: 1rem;
+}
+
+main .gallery .card .about .price {
+  font-weight: 1.2rem;
+  font-weight: 900;
+  padding: 0.5rem 0;
+  font-family: "Prata", serif;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=index.css.map */

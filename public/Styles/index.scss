@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Prata&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+main {
+  header {
+    background: black;
+    position: sticky;
+    top: 0;
+    .logo {
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      .navLinks {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: orangered;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .gallery {
+    margin-top: 2rem;
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 2rem;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    .card {
+      cursor: pointer;
+      padding: 1rem;
+      aspect-ratio: 1;
+      // display: flex;
+      border: none;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.24);
+      img {
+        height: 200px;
+        aspect-ratio: 1;
+        object-fit: contain;
+      }
+      .about {
+        margin-top: 1rem;
+        .title {
+          font-size: 1rem;
+        }
+        .price {
+          font-weight: 1.2rem;
+          font-weight: 900;
+          padding: 0.5rem 0;
+          font-family: "Prata", serif;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=product.id%></title>
+    <link rel="stylesheet" href="../public/Styles/product.css" />
+  </head>
+  <body>
+    <main>
+      <div class="product">
+        <img src="<%=product.image%>  " alt="" />
+        <div class="about">
+          <div class="title"><%=product.title%></div>
+          <div class="ratings">
+            ratings : <%=product.rating.rate %>
+            <span>( <%=product.rating.count %> reviews )</span>
+          </div>
+          <p class="desc"><%=product.description %></p>
+          <div class="category">
+            Category : <span> <%=product.category %></span>
+          </div>
+          <div class="price">$ <%=product.price.toFixed(2) %></div>
+          <div class="controls">
+            <a href="/Cart"><button class="addCart">Add to Cart</button></a>
+            <button class="buy">BuyNow</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

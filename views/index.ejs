@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FakeStore | NodeJs</title>
+    <!-- Linked CSS  -->
+    <link rel="stylesheet" href="../public/Styles/index.css" />    
+  </body>
+  </head>
+  <body>
+    <main>
+    <!-- Navbar  -->
+    <header>
+      <nav>
+        <h1 class="Logo">SoftSensor.ai</h1>
+        <ul class="navLinks">
+          <li><a href="">Home</a></li>
+          <li><a href="">Browse</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Navbar  -->
+    
+    <div class="gallery">        
+        <% if(data.length!=0) {%> 
+          <% data.forEach((element)=>{ %>             
+            <a href="/product/<%= element.id %> "  rel="noopener noreferrer">
+              <div class="card">
+              <img src='<%=element.image%> ' alt="">
+              <div class="about">
+                <div class="title"><%= element.title %> </div>
+                <div class="price">$ <%= element.price  %> </div>
+                <div class="rating">ratings : <%= element.rating.rate %> <span>( <%= element.rating.count%> )</span> </div>
+              </div>
+            </div> 
+          </a>                           
+            <% }) %> 
+          <% } %>         
+    </div>
+  </main>
+  </body>
+</html>

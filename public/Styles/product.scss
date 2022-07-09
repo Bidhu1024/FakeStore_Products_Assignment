@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Prata&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.product {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  img {
+    height: 20rem;
+    object-fit: cover;
+  }
+  .about {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    .title {
+      font-weight: bold;
+    }
+    .ratings {
+      font-weight: bold;
+      span {
+        font-weight: normal;
+      }
+    }
+    .desc {
+      font-size: 0.9rem;
+      line-height: 1.4rem;
+    }
+    .category {
+      font-size: 1rem;
+      font-weight: bold;
+      span {
+        font-weight: normal;
+      }
+    }
+    .price {
+      font-size: 1.5rem;
+      font-weight: 900;
+      padding: 0.5rem 0;
+      font-family: "Prata", serif;
+      letter-spacing: 1px;
+    }
+    .controls {
+      display: flex;
+      gap: 2rem;
+      a {
+        text-decoration: none;
+        color: none;
+      }
+      .addCart,
+      .buy {
+        cursor: pointer;
+        padding: 1rem 2rem;
+        border: 1px solid black;
+        color: black;
+        background-color: white;
+      }
+      .buy {
+        background-color: black;
+        color: whitesmoke;
+      }
+    }
+  }
+}
